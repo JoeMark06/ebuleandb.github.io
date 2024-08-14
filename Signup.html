@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="icon" type="image/x-icon" href="logo-icon.png">
+    <link rel="stylesheet" href="Signup.css">
+</head>
+<body>
+    <div class="container">
+		<div class="container2">
+			<div class="right-side">
+				<img src="LF_Think.jpg" alt="Littelfuse Logo" class="logo1">
+			</div>
+		</div>
+        <div class="left-side">
+            <img src="LF-logo.png" alt="Littelfuse Logo" class="logo">
+            <h1>CREATE ACCOUNT</h1>
+			<h1></h1>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit" onclick="signup()">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script>
+    function signup() {
+        const name = document.getElementById('name').value;
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        
+        // For demonstration purposes, logging the credentials to the console
+        // In a real application, you would send these credentials to the server
+        console.log('Name:', name);
+        console.log('Username:', username);
+        console.log('Password:', password);
+
+        // Redirect to another page (this is just an example)
+        window.location.href = 'Login2.html';
+    }   
+    </script>
+</body>
+</html>
+
